@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* PRIMARY */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    
+    /* NEUTRAL */
+    --Dark-gray: hsl(0, 0%, 59%);
+ 
+    /* TEXT */
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;    
+}
+
+body{
+    background-color: var(--Dark-cyan);
+    background-image: url("https://mbedon.github.io/FM07_Profile_card-component_main/images/bg-pattern-top.svg"), url("https://mbedon.github.io/FM07_Profile_card-component_main/images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
+
+main {
+    max-width: 325px;
+    margin: 125px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bg-card {
+    width: 100%;
+    line-height: 0;
+}
+
+.info-card {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user-photo{
+    border-radius: 50%;
+    border: 6px solid white;
+    margin: -54px auto 0;
+}
+
+.user-info{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid hsl(0, 0%, 90%);;
+}
+
+.name {
+    font-size: 1rem;
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+.age{
+    margin-left: 0.5rem;
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.country {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--Dark-gray);
+}
+
+.user-stats{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stats{
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stats h2{
+    font-size: 1rem;
+}
+.stats p{
+    font-size: 0.65rem;
+    line-height: 1.3rem;
+    color: var(--Dark-gray);
+}
+
+@media screen and (min-width: 400px) {
+    main {
+        max-width: 350px;
+    }
+}
